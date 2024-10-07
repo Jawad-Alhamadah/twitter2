@@ -1,0 +1,51 @@
+@tailwind base; 
+@tailwind components;
+@tailwind utilities;
+
+body{
+    background-color: #000000;
+}
+
+.text-box {
+    border: solid 1px black;
+    max-width:80%;
+    padding: 5px;
+    display: inline-block;
+    color: white;
+   }
+   
+   .text-box:focus{
+     outline:0;
+   }
+   
+
+.sign-shadow{
+  border: 2px solid rgba(9,179,235,1);
+ 
+ 
+-webkit-box-shadow: 40px 22px 0px 1px rgba(9,179,235,1);
+-moz-box-shadow: 40px 22px 0px 1px rgba(9,179,235,1);
+box-shadow: 40px 22px 0px 1px rgba(9,179,235,1);
+border-bottom-right-radius: 20px;
+}
+
+
+.button-shadow{
+  border: 2px solid rgba(9,179,235,1);
+ 
+ 
+-webkit-box-shadow: 5px 10px 0px 3px rgb(6, 63, 144);
+-moz-box-shadow: 5px 10px 0px 3px rgb(6, 63, 144);
+box-shadow: 5px 10px 0px 3px rgb(6, 63, 144);
+border-bottom-right-radius: 10px;
+}
+
+.button-shadow:hover{
+  transform: scale(1.1);
+}
+
+.button-shadow:active{
+background-color: rgb(2, 35, 82);;
+color: rgb(19, 36, 113);
+border: 1px solid rgb(32, 52, 142);;
+}
