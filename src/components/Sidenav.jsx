@@ -41,7 +41,7 @@ function Sidenav(props) {
 
                     <div className='flex space-x-3 items-center'>
                         <div onClick={() => navigate("/personalPage")} className='cursor-pointer rounded-full max-sm:size-5 size-10 bg-blue-900'>
-                            <img src={localStorage.getItem("userImage")} alt="oops" />
+                            <img style={localStorage.getItem("userImage")? {} : {display:"none"}} src={localStorage.getItem("userImage")} alt="oops" />
                         </div>
                         <div className='max-[1400px]:hidden'>{localStorage.getItem("username")}</div> {
                             //from local storage
